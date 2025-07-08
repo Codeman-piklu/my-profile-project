@@ -1,56 +1,178 @@
 *{
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html{
-    background-color: rgb(231, 226, 219);
-    width:100vw;
-    height: fit-content;
+    background-color: rgb(206, 203, 203);
 }
 body{
-    background-color: white;
-    margin: 10px 20px;
-    border: radius 5px;;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -ms-border-radius:10px;
-    -o-border-radius:10px;
+    max-width:900px;
+    background-color: rgb(230, 207, 149);
+    margin: 50px auto;
+    font-family: sans-serif;
+   
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+main{
+    margin: 10px 50px;
+    margin-bottom: 10px;
+   
+}
+nav{
+    margin: 10px;
+    padding: 10px;
 }
 nav ul{
     display: flex;
-    justify-content: right;
+    padding: 10px;
+    gap: 20px;
+    text-decoration: none;
+    justify-content: end;
+
 }
-
-
-nav ul li{
+nav ul li {
+    font-size:25px;
     list-style: none;
-padding: 5px;
-margin: 5px;
-font-size: 20px;
-font-weight: bold;
-}.naming h1{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(49, 72, 72);
+}
+nav ul li:hover{
+    color: red;
+}
+h1{
 font-size: 50px;
-font-family: Arial, Helvetica, sans-serif;
-}
-.naming p{
-    font-size: 20px;
-    font-weight:500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.imge{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imge img{
-    height: 400px;
-    width: 400px;
-    border-radius:20px;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    -ms-border-radius:20px;
-    -o-border-radius:20px;
-}
-.imge sub{
+text-transform: capitalize;
+margin-bottom: 5px;
+color: rgb(51, 130, 199);
 
+display: inline;
+
+}
+img{
+    width:30%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+img:hover {
+    box-shadow: 1px 2px 55px 2px rgb(209, 7, 7);
+    transition-duration: 2s;
+
+
+
+}
+.container{
+    margin-top: 5px;
+}
+.description{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+
+}.about{
+    margin-bottom: 10px;
+}
+.about h2{
+ text-transform: uppercase;
+ margin-bottom: 10px;
+color: rgb(103, 51, 151);
+
+}
+.about p{
+    font-weight:500;
+color: rgb(103, 51, 151);
+font-size: 20px;
+}
+hr{
+    margin:20px 0;
+  
+}
+.skills h2{
+padding: 10px 0;
+color: rgba(54, 66, 66, 0.728);
+}
+.skills ul{
+    display: flex;
+    gap:20px;
+    justify-content:flex-start;
+}.skills li{
+    background-color: rgba(169, 112, 15, 0.957);
+    list-style: none;
+    padding:  10px 20px ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: aliceblue;
+}
+.skills li:hover{
+    background-color: rgb(245, 194, 101);
+    color: black;
+}
+
+.Project_list{
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+ 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.project_1,.project_2,.project_3,h3{
+    margin-bottom: 10px;
+    color: rgba(11, 25, 75, 0.863);
+}
+.project_1,.project_2,.project_3,p{
+    text-align: left;
+    color: rgba(3, 14, 23, 0.752);
+    
+}
+.project_1,.project_2,.project_3{
+       background-color: rgba(26, 223, 197, 0.692);
+       padding: 20px;
+       text-align: center;
+       border-radius: 5px;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+}
+.project_1:hover{
+    gap: 10px;
+    box-shadow: 2px 3px 10px 5px red;
+    transition-duration: 2s;
+}
+.project_2:hover{
+    gap: 10px;
+    box-shadow: 2px 3px 10px 5px red;
+     transition-duration: 2s;
+}
+.project_3:hover{
+    gap: 10px;
+    box-shadow: 2px 3px 10px 5px red;
+     transition-duration: 2s;
+}
+footer{
+    padding-bottom: 20px ;
+}
+footer h2{
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+small:hover{
+    font-size: 30px;
+    transition-duration: 5s;
 }
